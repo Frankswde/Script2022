@@ -10,15 +10,16 @@
 ###+ 4 QRec為  自訂矩陣變數,之後可需要增加
 ###+ 5 Qadmenu  為自訂函數~用echo與矩陣變數Qrec製作輸入選單
 ###+ 6 QadMIT 為自訂函數~依照Qadmenu所得變數顯示
+###+ 7 SelectfunE 為自訂函數~用case語法選擇要執行
 
+QaddV=$1
 QRec=(
 "⚙️  New Script "
 "📝 New Note "
 "📻 Eles  ")
 
-QaddV=$1
 QaddScript(){
-echo -n '§ 你建立scipt的名稱:'
+echo -n '§ scipt的名稱:'
 read aScriptNam
 touch $aScriptNam.sh
 }	
@@ -36,10 +37,20 @@ echo '##+ New add Script' >> $aScriptNam.sh
 
 
 QaddNote(){
-echo -n '# ' 
-date +%Y/%m/%d 
+echo -n "## "   >> $aScriptNam.sh
+date +%Y/%m/%d >> $aScriptNam.sh
 echo -e '##+ '"$QaddV"
 }
+
+QadMIT(){
+echo -n "## "  >> $aScriptNam.sh
+date +%Y/%m/%d >> $aScriptNam.sh
+echo -n -e "###\t+\t"  >> $aScriptNam.sh
+echo -n ${QRec[$aNum]} >> $aScriptNam.sh
+echo -e "$QaddV" >> $aScriptNam.sh
+}
+
+
 
 Qadmenu(){
 Tlength=${#QRec[@]}
@@ -55,18 +66,38 @@ echo
 echo $QaddV
 }
 
-QadMIT(){
-echo -n "## "  
-date '+%R' 
-echo -n -e "### \t+ "  
-echo -n ${QRec[$aNum]} 
+
+SelectfunE(){
+case $aNum in
+    0)  
+		echo -n  '選擇 '0'~' 
+		echo ${QRec[0]}
+		QaddMeta
+		echo
+    ;;
+    1)  
+		echo -n  '選擇 '1'~' 
+		echo ${QRec[1]}
+		QadMIT
+		echo
+    ;;
+    2)  
+		echo -n  '選擇 '$aNum'~' 
+		echo ${QRec[$aNum]}
+		# QadMIT
+		echo 'test'
+    ;;
+    *)  echo '你没有输入 0 到 2  之间的数字'
+    ;;
+esac
 }
 
 
-
-
+QaddScript
 Qadmenu
-QadMIT
-# QaddScript
+SelectfunE
 # QaddMeta
-# QaddNote
+
+
+
+
