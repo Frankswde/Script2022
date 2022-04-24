@@ -24,5 +24,28 @@
 ## QadGIT.sh @2022/04/23
 + Program:快速將修改上傳到Github
 
-# test0424-01.sh
-+Program: 練習參考書範例
+## test0424-01.sh
++ Program: 練習參考書範例
+	+ 運算子包括：
+```
+-d file file 是目錄回傳 true.
+-f file file 是檔案回傳 true.
+-r file file 可讀回傳 true.
+-s file file 的體積大於 0 (不是空檔案) 回傳 true.
+-w file file 可寫入回傳 true.
+-x file file 可執行回傳 true.
+
+$str1 = str2 判斷 $str1 與 $str2 字串是否相同。
+$str1 != $str2 判斷 $str1 與 $str2 字串是否不相同。
+-n $str 當 $str1 不是 null, 回傳 true.
+-z $str 當 $str1 是 null, 回傳 true.
+
+var1 -eq var2 var1 等於 var2 回傳 true.
+var1 -ne var2 var1 不等於 var2 回傳 true.
+var1 -gt var2 var1 大過 var2 回傳 true.
+var1 -ge var2 var1 大過或等如 var2 回傳 true.
+var1 -lt var2 var1 小過 var2 回傳 true.
+var1 -le var2 var1 小過或等如 var2 回傳 true.
+```
+
+
