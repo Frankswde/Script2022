@@ -11,6 +11,10 @@
 ###+ 5 Qadmenu  為自訂函數~用echo與矩陣變數Qrec製作輸入選單
 ###+ 6 QadMIT 為自訂函數~依照Qadmenu所得變數顯示
 ###+ 7 SelectfunE 為自訂函數~用case語法選擇要執行
+# 2022/02/04
+##+ Update Script
+###+ 1 QaddNote2Read為自訂函數~用greap 指令將建立目的新增到ReadMe
+
 
 QaddV=$1
 QRec=(
@@ -35,6 +39,12 @@ date +%Y/%m/%d >> $aScriptNam.sh
 echo '##+ New add Script' >> $aScriptNam.sh
 }
 
+QaddNote2Read(){
+echo  >> ReadME.md
+echo -n '# ' >> ReadME.md
+ls $aScriptNam.sh >> ReadME.md
+echo '+Program:' $aPro >> ReadME.md
+}	
 
 QaddNote(){
 echo -n "## "   >> $aScriptNam.sh
@@ -73,6 +83,7 @@ case $aNum in
 		echo -n  '選擇 '0'~' 
 		echo ${QRec[0]}
 		QaddMeta
+		QaddNote2Read
 		echo
     ;;
     1)  
