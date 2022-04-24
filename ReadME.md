@@ -21,3 +21,5 @@
 + Program: 快速分割MP3
 ## QaddScript.sh @2022/04/23
 + Program: 用範本快速新增Script
+## QadGIT.sh @2022/04/23
++ Program:快速將修改上傳到Github
