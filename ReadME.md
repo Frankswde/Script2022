@@ -23,3 +23,6 @@
 + Program: 用範本快速新增Script
 ## QadGIT.sh @2022/04/23
 + Program:快速將修改上傳到Github
+
+# test0424-01.sh
++Program: 練習參考書範例
