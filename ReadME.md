@@ -57,4 +57,7 @@ var1 -le var2 var1 小過或等如 var2 回傳 true.
 + Program: 測試網路連線
 
 ## QsetTout.sh
-+ Program: 快速設定終端機�登出時間
++ Program: 快速設定終端機登出時間
+
+## test0428-01.sh
++ Program: 將同月份的script移動到同一資料夾
