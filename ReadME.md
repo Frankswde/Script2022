@@ -62,4 +62,6 @@ var1 -le var2 var1 小過或等如 var2 回傳 true.
 ## test0428-01.sh
 + Program: 將同月份的script移動到同一資料夾
 ## test0501.sh
-+ Program: 練習參考書script
++ Program: 練習參考書script~until迴圈練習
+## test0502.sh
++ Program: 練習參考書script~for 迴圈練習
