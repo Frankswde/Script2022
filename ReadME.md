@@ -65,3 +65,5 @@ var1 -le var2 var1 小過或等如 var2 回傳 true.
 + Program: 練習參考書script~until迴圈練習
 ## test0502.sh
 + Program: 練習參考書script~for 迴圈練習
+## test0503.sh
++ Program: 練習迴圈
