@@ -41,9 +41,9 @@ echo '##+ New add Script' >> $aScriptNam.sh
 
 QaddNote2Read(){
 echo  >> ReadME.md
-echo -n '# ' >> ReadME.md
+echo -n '## ' >> ReadME.md
 ls $aScriptNam.sh >> ReadME.md
-echo '+Program:' $aPro >> ReadME.md
+echo '+ Program:' $aPro >> ReadME.md
 }	
 
 QaddNote(){
