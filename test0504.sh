@@ -9,7 +9,7 @@ for i in `seq 9`
 do
     for j in `seq 9`
         do
-        echo "$j X $i = `echo $(($i*$j))`"
+         [ $j -le $i ] && echo -n "$i x $j = `echo $(($i*$j))`  "
     done
-
+echo
 done
