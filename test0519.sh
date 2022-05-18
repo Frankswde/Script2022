@@ -5,10 +5,12 @@
 # 2022/05/18
 ##+ New add Script
 echo "please enter two number"
-echo "This is number a:"
+echo -n "This is number a:"
 read -n 1 a
-echo "This is number b:"
+echo
+echo -n "This is number b:"
 read -n 1 b
+echo
 if test $a -eq $b
 then echo "NO.a = NO.b"
 elif test $a -gt $b
