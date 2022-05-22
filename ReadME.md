@@ -82,3 +82,6 @@ var1 -le var2 var1 小過或等如 var2 回傳 true.
 
 ## test0520.sh
 + Program: case語法
+
+## test0523.sh
++ Program: case語法
