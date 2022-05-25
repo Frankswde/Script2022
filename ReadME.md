@@ -91,3 +91,6 @@ var1 -le var2 var1 小過或等如 var2 回傳 true.
 
 ## test0524.sh
 + Program: 檢查目錄是否淨空
+
+## test0525.sh
++ Program: 刪除檔案空白行
